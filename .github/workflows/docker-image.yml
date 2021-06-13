@@ -19,5 +19,5 @@ jobs:
         uses: flownative/action-docker-build@v1
         with:
           tag_ref: ${{ github.ref }}
-          image_name: flownative/docker-base/base
+          image_name: ${{ GITHUB_REPOSITORY }}
           registry_password: ${{ secrets.GITHUB_TOKEN }}
